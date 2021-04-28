@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Hello, pybo!</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container" id="myNav">
+            <div class="logo-container">
+                <a href="#">I <span class="blue">Sea</span></a>
+            </div>
+            <a href="javascript:void(0);" class="menu"><i class="fa fa-bars"></i></a>
+            <div class="w3-bar nav-list">
+                <a href="#now" class="w3-bar-item w3-mobile">해양 사고 시각화</a>
+                <a href="#mywaste" class="w3-bar-item w3-mobile">모니터링</a>
+                <a href="#rank" class="w3-bar-item w3-mobile">실시간 위험지표</a>
+                <a href="#instagram" class="w3-bar-item w3-mobile">About</a>
+            </div>
+        </div>
+    </nav>
+    <div id="page1">
+        <img id="background_photo" src={{ url_for('static', filename='img/main_photo.png') }}>
+        <span id="I">I</span>
+        <span id="Sea">Sea</span>
+        <span id="See_Sea">해양을 보다</span>
+        <span id="detail">해양 사고 분석 및 예측 모니터링 시스템</span>
+    </div>
+</body>
+
+</html>
