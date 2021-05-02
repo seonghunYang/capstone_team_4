@@ -9,5 +9,9 @@ def hello():
 def hello2():
     return render_template('risk_indicator.html')
 
+@app.route("/monitoring")
+def hello3():
+    return render_template('monitoring.html')
+
 if __name__ == '__main__':
     app.run()
