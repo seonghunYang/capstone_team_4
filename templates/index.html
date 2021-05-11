@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- pybo CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
     <title>Hello, pybo!</title>
 </head>
 
@@ -26,12 +28,34 @@
         </div>
     </nav>
     <div id="page1">
-        <img id="background_photo" src={{ url_for('static', filename='img/main_photo.png') }}>
+        <img id="background_photo" src="{{ url_for('static', filename='img/main_photo.png') }}">
         <span id="I">I</span>
         <span id="Sea">Sea</span>
         <span id="See_Sea">해양을 보다</span>
         <span id="detail">해양 사고 분석 및 예측 모니터링 시스템</span>
     </div>
+
+    <div id="container">
+        <div>
+            <h3>
+                해양 사고 시각화
+            </h3>
+        </div>
+        <div id="page2">
+            <canvas id="myChart"></canvas>
+            <canvas id="myChart2"></canvas>
+        </div>
+    </div>
+    <div id="about">
+        <h3>
+            About
+        </h3>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/yearChart.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/monthChart.js') }}"></script>
 </body>
 
 </html>

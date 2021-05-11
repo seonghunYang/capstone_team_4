@@ -134,6 +134,7 @@ nav {
     font-size: 40px;
     color: rgba(0,0,0,1);
 }
+
 #detail {
     left: 133px;
     top: 353px;
@@ -143,6 +144,19 @@ nav {
     font-weight: normal;
     font-size: 25px;
     color: rgba(0,0,0,1);
+}
+
+#container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#about {
+    background-color: dimgrey;
 }
 
 #title_risk_indicator {
