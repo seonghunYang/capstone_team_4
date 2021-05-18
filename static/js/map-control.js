@@ -21,7 +21,7 @@ const clusterer = new kakao.maps.MarkerClusterer({
 
 // jQuery 사용
 // 데이터를 가져와 마커를 생성하고 클러스터러 객체에 넘겨주기
-$.get("location.json", function (data) {
+$.get("../../static/data/location.json", function (data) {
   // 데이터 좌표 값을 가지고 마커 표시
   // 마커 클러스터러로 관리할 마커 객체는 생성할 때 지도 객체를 설정하지 않음
   const markers = $(data.positions).map(function (i, position) {
@@ -69,7 +69,7 @@ $.get("location.json", function (data) {
 
     // 커스텀 오버레이 이미지
     const img = document.createElement("img");
-    img.setAttribute("src", "img/warn.jpg");
+    img.setAttribute("src", "../../static/img/warn.jpg");
     img.setAttribute("width", 73);
     img.setAttribute("height", "70");
     imgDiv.appendChild(img);
