@@ -1,5 +1,3 @@
-const API_KEY = "SgsyiUvHoGA1NJQiOVU6A=="; // 해양 조위 관측소 API
-
 const mapContainer = document.getElementById("map"), // 지도 표시 컨테이너
   mapOption = {
     center: new kakao.maps.LatLng(36.47914, 126.93519), // 지도 중심 좌표
@@ -97,14 +95,7 @@ $.get("../../static/data/location.json", function (data) {
     const footerDiv = document.createElement("div");
     desc.appendChild(footerDiv);
 
-    // 커스텀 오버레이 링크
-    const link = document.createElement("a");
-    link.className = "link";
-    const text3 = document.createTextNode("실시간 조위 관측소 정보");
-    link.appendChild(text3);
-    link.target = "_blank";
-    link.href = "http://www.khoa.go.kr/oceangrid/khoa/koofs.do";
-    footerDiv.appendChild(link); // DOM 구현 끝
+    // DOM 구현 끝
 
     overlay.setContent(wrap); // 커스텀 오버레이 content 추가
 
