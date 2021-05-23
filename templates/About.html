@@ -1,33 +1,36 @@
 <!doctype html>
 <html lang="ko">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- pybo CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
-    <title>About</title>
-</head>
-
-<body>
-    <nav>
-        <div class="nav-container" id="myNav">
-            <div class="logo-container">
-                <a href="/">I <span class="blue">Sea</span></a>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- pybo CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+        <title>About</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container" id="myNav">
+                <div class="logo-container">
+                    <a href="/">I
+                        <span class="blue">Sea</span></a>
+                </div>
+                <a href="javascript:void(0);" class="menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="w3-bar nav-list">
+                    <a href="/visualization" class="w3-bar-item w3-mobile">해양 사고 시각화</a>
+                    <a href="/monitoring" class="w3-bar-item w3-mobile">해양 사고 모니터링</a>
+                    <a href="/risk" class="w3-bar-item w3-mobile">실시간 위험지표</a>
+                    <a href="/about" class="w3-bar-item w3-mobile">About</a>
+                </div>
             </div>
-            <a href="javascript:void(0);" class="menu"><i class="fa fa-bars"></i></a>
-            <div class="w3-bar nav-list">
-                <a href="/visualization" class="w3-bar-item w3-mobile">해양 사고 시각화</a>
-                <a href="/monitoring" class="w3-bar-item w3-mobile">해양 사고 모니터링</a>
-                <a href="/risk" class="w3-bar-item w3-mobile">실시간 위험지표</a>
-                <a href="/about" class="w3-bar-item w3-mobile">About</a>
-            </div>
+        </nav>
+        <div id="page5">
+            <span id="title">&lt&lt About &gt&gt</span>
         </div>
-    </nav>
-    <div id="page5">
-        <span id="title">&lt&lt　About　&gt&gt</span>
-    </div>
-</body>
+    </body>
 </html>
