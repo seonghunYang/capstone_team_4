@@ -1,19 +1,11 @@
-<!doctype html>
-<html lang="ko">
+{% extends 'layout.html' %}
+{% block content %}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- pybo CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Hello, pybo!</title>
-</head>
-
-<body>
+<div>
     <span id="title_risk_indicator">실시간 위험지표</span>
     <div id="risk_indicator"></div>
     <button type="button" id="start_btn">시작</button>
     <button type="button" id="end_btn">종료</button>
-</body>
-</html>
+</div>
+
+{% endblock %}

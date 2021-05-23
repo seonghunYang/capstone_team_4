@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- pybo CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+  <title>Hello, pybo!</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container" id="myNav">
+      <div class="logo-container">
+          <a href="/">I <span class="blue">Sea</span></a>
+      </div>
+      <a href="javascript:void(0);" class="menu"><i class="fa fa-bars"></i></a>
+      <div class="w3-bar nav-list">
+        <a href="/visualization" class="w3-bar-item w3-mobile">해양 사고 시각화</a>
+        <a href="#mywaste" class="w3-bar-item w3-mobile">모니터링</a>
+        <a href="/risk" class="w3-bar-item w3-mobile">실시간 위험지표</a>
+        <a href="#instagram" class="w3-bar-item w3-mobile">About</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- 기본 템플릿 안에 삽입될 내용 Start -->
+        {% block content %}
+        {% endblock %}
+    <!-- 기본 템플릿 안에 삽입될 내용 End -->
+</body>
+
+</html>
