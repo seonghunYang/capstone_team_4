@@ -1,0 +1,22 @@
+#title {
+    left: 575px;
+    top: 95px;
+    position: absolute;
+    overflow: visible;
+    width: 377px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: NanumSquareOTF_ac;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0,0,0,1);
+}
+
+#chart {
+    position: absolute;
+    width: 901px;
+    height: 236px;
+    left: 350px;
+    top: 190px;
+}

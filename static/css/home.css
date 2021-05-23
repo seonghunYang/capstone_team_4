@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff") format('woff');
+    font-weight: bold;
+}
+
+#background_photo {
+    position: absolute;
+    width: 1546px;
+    height: 688px;
+    left: -10px;
+    top: 33px;
+    overflow: hidden;
+}
+
+#I {
+    left: 128px;
+    position: absolute;
+    font-family: 'Cafe24Ohsquare';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    color: rgba(0,0,0,1);
+}
+
+#Sea {
+    left: 240px;
+    top: 95px;
+    position: absolute;
+    font-family: 'Cafe24Ohsquare';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    color: rgba(68,114,196,1);
+}
+
+#See_Sea {
+    left: 130px;
+    top: 295px;
+    position: absolute;
+    font-family: 'Cafe24Ohsquare';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(0,0,0,1);
+}
+
+#detail {
+    left: 133px;
+    top: 353px;
+    position: absolute;
+    font-family: 'Cafe24Ohsquare';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}

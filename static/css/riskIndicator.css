@@ -1,0 +1,109 @@
+#title {
+    left: 575px;
+    top: 95px;
+    position: absolute;
+    overflow: visible;
+    width: 377px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: NanumSquareOTF_ac;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0,0,0,1);
+}
+
+#risk_indicator {
+    background-color: #ffffff;
+    border: 10px solid rgba(112,112,112,1);
+    position: absolute;
+    width: 901px;
+    height: 236px;
+    left: 350px;
+    top: 190px;
+}
+
+#startBtn {
+    background-color: #ffffff;
+    border: 10px solid rgba(0,112,192,1);
+    position: absolute;
+    width: 450px;
+    height: 236px;
+    left: 350px;
+    top: 470px;
+    font-family: NanumSquareOTF_ac;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    color: rgba(0,0,0,1);
+}
+
+#endBtn {
+    background-color: #ffffff;
+    border: 10px solid rgba(255,0,0,1);
+    position: absolute;
+    width: 450px;
+    height: 236px;
+    left: 820px;
+    top: 470px;
+    font-family: NanumSquareOTF_ac;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    color: rgba(0,0,0,1);
+}
+
+@media all and (max-width:1024px) {
+    #title_risk_indicator {
+        left: 270px;
+        font-size: 40px;
+    }
+    #risk_indicator {
+        width: 500px;
+        height: 135px;
+        left: 130px;
+    }
+    
+    #start_btn {
+        width: 250px;
+        height: 135px;
+        left: 130px;
+        top: 356px;
+        font-size: 30px;
+    }
+    #end_btn {
+        width: 250px;
+        height: 135px;
+        left: 400px;
+        top: 356px;
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width:450px) {
+    #title_risk_indicator {
+        left: 120px;
+        top: 100px;
+        font-size: 30px;
+    }
+    #risk_indicator {
+        width: 300px;
+        height: 100px;
+        left: 50px;
+    }
+    
+    #start_btn {
+        width: 150px;
+        height: 135px;
+        left: 50px;
+        top: 316px;
+        font-size: 25px;
+    }
+    #end_btn {
+        width: 150px;
+        height: 135px;
+        left: 220px;
+        top: 316px;
+        font-size: 25px;
+    }
+}

@@ -1,3 +1,18 @@
+#title {
+  left: 575px;
+  top: 95px;
+  position: absolute;
+  overflow: visible;
+  width: 377px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: NanumSquareOTF_ac;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: rgba(0,0,0,1);
+}
+
 .wrap {
   position: absolute;
   left: 0;
@@ -11,10 +26,12 @@
   font-family: "Malgun Gothic", dotum, "돋움", sans-serif;
   line-height: 1.5;
 }
+
 .wrap * {
   padding: 0;
   margin: 0;
 }
+
 .wrap .info {
   width: 286px;
   height: 120px;
@@ -24,10 +41,12 @@
   overflow: hidden;
   background: #fff;
 }
+
 .wrap .info:nth-child(1) {
   border: 0;
   box-shadow: 0px 1px 2px #888;
 }
+
 .info .title {
   padding: 5px 0 0 10px;
   height: 30px;
@@ -36,6 +55,7 @@
   font-size: 18px;
   font-weight: bold;
 }
+
 .info .close {
   position: absolute;
   top: 10px;
@@ -45,28 +65,34 @@
   height: 17px;
   background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png");
 }
+
 .info .close:hover {
   cursor: pointer;
 }
+
 .info .body {
   position: relative;
   overflow: hidden;
 }
+
 .info .desc {
   position: relative;
   margin: 13px 0 0 90px;
   height: 75px;
 }
+
 .desc .observName {
   overflow: hidden;
   text-overflow: observName;
   white-space: nowrap;
 }
+
 .desc .observPosition {
   font-size: 11px;
   color: #888;
   margin-top: -2px;
 }
+
 .info .img {
   position: absolute;
   top: 6px;
@@ -77,6 +103,7 @@
   color: #888;
   overflow: hidden;
 }
+
 .info:after {
   content: "";
   position: absolute;
@@ -87,6 +114,7 @@
   height: 12px;
   background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png");
 }
+
 .info .link {
   color: #5085bb;
 }

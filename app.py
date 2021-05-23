@@ -2,16 +2,24 @@ from flask import Flask,render_template
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
-    return render_template('index.html')
+def home():
+    return render_template('home.html')
 
-@app.route("/risk")
-def hello2():
-    return render_template('risk_indicator.html')
+@app.route("/visualization")
+def visualization():
+    return render_template('visualization.html')
 
 @app.route("/monitoring")
-def hello3():
+def monitoring():
     return render_template('monitoring.html')
+
+@app.route("/risk")
+def riskIndicator():
+    return render_template('riskIndicator.html')
+
+@app.route("/about")
+def about():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run()

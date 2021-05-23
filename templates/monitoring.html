@@ -8,21 +8,36 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- pybo CSS -->
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/monitoring.css') }}"
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/monitoring.css') }}"
     />
     <script src="{{ url_for('static', filename='jquery/jquery-3.6.0.min.js') }}"></script>
-    <title>해양사고 모니터링</title>
+    <title>해양 사고 모니터링</title>
   </head>
 
   <body>
-    <h2 style="text-align: center">해양사고 모니터링</h2>
+    <nav>
+      <div class="nav-container" id="myNav">
+          <div class="logo-container">
+              <a href="/">I <span class="blue">Sea</span></a>
+          </div>
+          <a href="javascript:void(0);" class="menu"><i class="fa fa-bars"></i></a>
+          <div class="w3-bar nav-list">
+              <a href="/visualization" class="w3-bar-item w3-mobile">해양 사고 시각화</a>
+              <a href="/monitoring" class="w3-bar-item w3-mobile">해양 사고 모니터링</a>
+              <a href="/risk" class="w3-bar-item w3-mobile">실시간 위험지표</a>
+              <a href="/about" class="w3-bar-item w3-mobile">About</a>
+          </div>
+      </div>
+  </nav>
+  <div id="page3">
+    <span id="title">&lt&lt　해양 사고 모니터링　&gt&gt</span>
     <div
       id="map"
       style="width: 600px; height: 600px; margin: 0 auto; text-align: center"
     ></div>
+    </div>
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d5809f065dee3814fd0fa4741416f9f1&libraries=clusterer"></script>
-    <script src="{{ url_for('static', filename='js/map-control.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/map-control.js') }}"></script>
   </body>
 </html>
