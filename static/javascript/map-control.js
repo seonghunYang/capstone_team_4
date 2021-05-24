@@ -2,7 +2,7 @@ const API_KEY = "SgsyiUvHoGA1NJQiOVU6A=="; // 해양 조위 관측소 API
 
 const mapContainer = document.getElementById("map"), // 지도 표시 컨테이너
   mapOption = {
-    center: new kakao.maps.LatLng(37.47914, 126.93519), // 지도 중심 좌표
+    center: new kakao.maps.LatLng(36.47914, 126.93519), // 지도 중심 좌표
     level: 14, // 지도 확대 레벨
     mapTypeId: kakao.maps.MapTypeId.HYBRID, // 지도종류, 일반지도 default 설정 -> MapTypeId.ROADMAP
   };
