@@ -7,12 +7,13 @@
         해양 사고 시각화
     </h3>
   </div>
-  <div id="page2">
-    <canvas id="myChart"></canvas>
-    <canvas id="myChart2"></canvas>
+  <div id="graph">
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/numberOfAccidentShipPerYear.js') }}"></script>
+  </div>
+  <div id="graph2">
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/numberOfAccidentShipPerArea.js') }}"></script>
   </div>
 </div>
-<script type="text/javascript" src="{{ url_for('static', filename='javascript/yearChart.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='javascript/monthChart.js') }}"></script>
 
 {% endblock %}
+
